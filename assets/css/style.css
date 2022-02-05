@@ -1,3 +1,9 @@
+:root {
+  --primary-color: rgb(181, 228, 235); 
+  --text-color: white;
+  --secondary-color: rgb(170, 218, 186);
+}
+
 *{
   box-sizing: border-box;
   margin: 0px;
@@ -5,19 +11,33 @@
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/* navigation customisation starts here*/
+.container {
+  background-color: var(--primary-color);
+}
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(196, 196, 196);
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
 }
 
 .brand-title{
-  font-size: 1.5rem;
+  justify-content: flex-start;
+  font-size: 2rem;
   margin: .5rem;
+  text-decoration: none;
+  color: var(--text-color);
 }
 
+.brand-title:hover{
+  color:var(--secondary-color);
+  transition: 0.4s;
+}
 .navbar-links ul {
   margin: 0;
   padding: 0;
@@ -30,18 +50,18 @@
 
 .navbar-links li a {
   text-decoration: none;
-  color: white;
+  color: var(--text-color);
   padding: 1rem;
   display: block;
 }
 
 .navbar-links a:hover {
-  background-color: bisque;
+  background-color: var(--secondary-color);
 }
 
 .toggle-button{
   position: absolute;
-  top: .75rem;
+  top: 1rem;
   right: 1rem;
   display: none;
   flex-direction: column;
@@ -55,6 +75,15 @@
   width: 100%;
   background-color: white;
   border-radius: 10px;
+  position: relative;
+  transform-origin: 0 0;
+  transition: 0.4s;
+}
+
+.toggle-button:hover span:nth-child(2) {
+  transform: translateX(10px);
+
+  background-color: var(--secondary-color);
 }
 
 @media (max-width:600px){
@@ -88,4 +117,16 @@
   .navbar-links.active {
     display: flex;
   }
+}
+/*navigation coustomisation ends here*/
+
+/*Carousel starts here*/
+
+body {
+  background-image: url('../Content/chicken-food-reciepe.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+
 }
