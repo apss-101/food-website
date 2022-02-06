@@ -130,3 +130,25 @@ body {
   position: relative;
 
 }
+/*Search bar customization*/
+.wrapper {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 550px;
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+.wrapper .input {
+  width: 85%;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  
+}
+
