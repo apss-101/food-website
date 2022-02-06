@@ -2,13 +2,22 @@
   --primary-color: rgb(181, 228, 235); 
   --text-color: white;
   --secondary-color: rgb(170, 218, 186);
+  --font: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 *{
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: var(--font)
+}
+
+body {
+  background-image: url('../Content/chicken-food-reciepe.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
 }
 
 /* navigation customisation starts here*/
@@ -120,13 +129,66 @@
 }
 /*navigation coustomisation ends here*/
 
-/*Carousel starts here*/
-
-body {
-  background-image: url('../Content/chicken-food-reciepe.jpg');
-  height: 100vh;
-  background-size: cover;
-  background-position: center center;
-  position: relative;
-
+/*home-page search bar starts here*/
+/*.search-title {
+  position: absolute;
+  justify-content: center;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-230%);
+  font-size: x-large;
+  color: var(--text-color);
+  background-color: var(--secondary-color);
+  padding: 7px 7px;
+  border-radius: 10px;
+  text-align: center;
 }
+*/
+.search-wrapper {
+  position: absolute;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 550px;
+  background: rgba(0, 0, 0, 0.6);
+  width: 100%;
+  padding: 12px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.search-wrapper input {
+  font-size: 15px;
+  width: 85%;
+  padding: 13px 20px;
+  border: none;
+  border-radius: 13px;
+  font-stretch: expanded;
+  font-family: var(--font);
+  outline: none;
+  background-color:rgba(255, 255, 255, 0.692);
+}
+  
+ .search-wrapper input:hover {
+   background-color: var(--text-color);
+  
+ }
+.search-btn button {
+  height: 100%;
+  background-color: var(--primary-color);
+  width:200%;
+  border-radius: 13px;
+  padding: 5px;
+  transform: translate(-50%, 0%);
+  color: rgb(0, 0, 0);
+  border: none;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+.search-btn button:hover {
+  background-color: var(--secondary-color);
+}
+/*home-page search-bar ends here*/
+
