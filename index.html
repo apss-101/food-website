@@ -1,54 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <title>Eat!</title>
-</head>
+  </head>
 
-<body>
-    <div class="background-image">
-
-    </div> 
+  <body>
+    <div class="background-image"></div>
     <!--NAVBAR-->
     <header class="container">
-    <nav class="navbar">   
-        <div class="brand-title"><a class="brand-title" href=index.html>Eat!</a></div>
+      <nav class="navbar">
+        <div class="brand-title">
+          <a class="brand-title" href="index.html">Eat!</a>
+        </div>
 
         <div class="hamburger">
-            <a href="#" class="toggle-button">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </a>
+          <a href="#" class="toggle-button">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </a>
         </div>
 
         <div class="navbar-links">
-            <ul>
-                <li>
-                    <a href="./index.html">Home</a>
-                
-                <li>
-                    <a href="./recipe.html">Recipes</a> 
-               
-                <li>
-                    <a href="./videos.html">Videos</a> 
-                </li>
-            </ul>
+          <ul>
+            <li>
+              <a href="./index.html">Home</a>
+            </li>
+
+            <li>
+              <a href="./recipe.html">Recipes</a>
+            </li>
+
+            <li>
+              <a href="./videos.html">Videos</a>
+            </li>
+          </ul>
         </div>
-    </nav>
-    <!--SEARCHBAR-->
-    <div class="wrapper">
-        <input type="text" class="input" placeholder="Find a recipe!">
-    </div>
+      </nav>
+      <!--SEARCH BAR-->
+      <div class="wrapper">
+        <form id="search-form">
+          <input
+            type="text"
+            class="input"
+            id="search-input"
+            placeholder="Find a recipe!"
+          />
+          <button type="submit">Go!</button>
+        </form>
+      </div>
     </header>
     <!--CAROUSEL-->
-       
-<footer>
-    <script src="./assets/js/script.js"></script>
-</footer>
 
-</body>
+    <footer>
+      <script src="./assets/js/script.js"></script>
+    </footer>
+  </body>
 </html>
-
