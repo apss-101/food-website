@@ -258,8 +258,9 @@ footer a {
   font-style: italic;
   font-size: 13px;
 }
-=======
+
 /*Search bar customization*/
+/*
 .wrapper {
   display: flex;
   position: absolute;
@@ -280,5 +281,4 @@ footer a {
   font-weight: bold;
   
 }
-
->>>>>>> b1780b1675d902159ab77ed0332c85ccee7386a7
+*/
