@@ -1,4 +1,4 @@
-THEMEALDB_BASE_URL = "www.themealdb.com/api/json/v1/1/search.php?";
+THEMEALDB_BASE_URL = "https://www.themealdb.com/api/json/v1/1/search.php?";
 
 //navbar hamburger function
 const toggleButton = document.getElementsByClassName("toggle-button")[0];
@@ -12,14 +12,14 @@ toggleButton.addEventListener("click", () => {
 function onSearchSubmit(event) {
   event.preventDefault();
   const searchInput = document.getElementById("search-input");
-  const url =
-    "www.themealdb.com/api/json/v1/1/search.php?s=" + searchInput.value;
+  const url = THEMEALDB_BASE_URL + "s=" + searchInput.value;
   console.log(url);
-  fetch(url, {
-    method: "GET",
-  })
+  fetch("https://www.themealdb.com/api/json/v1/1/random.php")
     .then(function (response) {
-      console.log(response);
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
     })
     .catch(function (error) {
       console.log(error.message);
