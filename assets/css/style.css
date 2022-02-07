@@ -145,6 +145,7 @@ body {
   border-radius: 10px;
   text-align: center;
 }
+<<<<<<< HEAD
 */
 .search-wrapper {
   position: absolute;
@@ -257,3 +258,27 @@ footer a {
   font-style: italic;
   font-size: 13px;
 }
+=======
+/*Search bar customization*/
+.wrapper {
+  display: flex;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  max-width: 550px;
+  width: 100%;
+  padding: 15px;
+  border-radius: 5px;
+  justify-content: space-between;
+}
+.wrapper .input {
+  width: 85%;
+  padding: 15px 20px;
+  border: none;
+  border-radius: 5px;
+  font-weight: bold;
+  
+}
+
+>>>>>>> b1780b1675d902159ab77ed0332c85ccee7386a7
