@@ -8,7 +8,7 @@ toggleButton.addEventListener('click', () => {
 
 function onSearchSubmit(event) {
     event.preventDefault();
-    const searchInput = document.getElementById("search");
+    const searchInput = document.getElementById("search-input");
     const url = THEMEALDB_BASE_URL + "s=" + searchInput.value;
     console.log(url);
     fetch("https://www.themealdb.com/api/json/v1/1/random.php")
