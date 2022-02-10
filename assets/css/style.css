@@ -130,22 +130,6 @@ body {
 }
 /*navigation coustomisation ends here*/
 
-/*home-page search bar starts here*/
-/*.search-title {
-  position: absolute;
-  justify-content: center;
-  top:50%;
-  left: 50%;
-  transform: translate(-50%,-230%);
-  font-size: x-large;
-  color: var(--text-color);
-  background-color: var(--secondary-color);
-  padding: 7px 7px;
-  border-radius: 10px;
-  text-align: center;
-}
-
-*/
 .search-wrapper {
   position: absolute;
   top: 50%;
@@ -255,40 +239,3 @@ footer a {
   font-style: italic;
   font-size: 13px;
 }
-
-/*Search bar customization*/
-/*
-.wrapper {
-  display: flex;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  max-width: 550px;
-  width: 100%;
-  padding: 15px;
-  border-radius: 5px;
-  justify-content: space-between;
-}
-.wrapper .input {
-  width: 85%;
-  padding: 15px 20px;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  
-}
-<<<<<<< HEAD
-
-button {
-  background: #fff;
-  width: 10%;
-  border-radius: 5px;
-  padding: 14px 18px;
-  position:absolute;
-  cursor: pointer;
-
-}
-
-=======
-*/
