@@ -1,89 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
-    <title>Eat!</title>
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css"/>
+    <title>Foodology</title>
+</head>
 
-  <body>
+<body>
     <!--NAVBAR-->
     <header class="container">
-      <nav class="navbar">
-        <div class="brand-title">
-          <a class="brand-title" href="index.html">Eat!</a>
-        </div>
+    <nav class="navbar">   
+        <div class="brand-title"><a class="brand-title" href=index.html>Foodology</a></div>
 
         <div class="hamburger">
-          <a href="#" class="toggle-button">
-            <span class="bar"></span>
-            <span class="bar"></span>
-            <span class="bar"></span>
-          </a>
+            <a href="#" class="toggle-button">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </a>
         </div>
 
         <div class="navbar-links">
-          <ul>
-            <li>
-              <a href="./index.html">Home</a>
-            </li>
-
-            <li>
-              <a href="./recipe.html">Recipes</a>
-            </li>
-
-            <li>
-              <a href="./about.html">About</a>
-            </li>
-          </ul>
+            <ul>
+                <li>
+                    <a href="./index.html">Home</a>
+                
+                <li>
+                    <a href="./recipe.html">Recipes</a> 
+               
+                <li>
+                    <a href="./about.html">About</a> 
+                </li>
+            </ul>
         </div>
-      </nav>
-    </header>
-    <!--SEARCHBAR -->
-    
-    <div class="search-wrapper">
-      <form id="search-form">
-        <input
-          type="search"
-          name="search"
-          id="search-input"
-          placeholder="Search for recipes"
-        />
-        <div class="search-btn">
-          <button class="btn" type="submit">GO</button>
-        </div>
-      </form>
+    </nav>
+    <!--SEARCHBAR
+    <div class="wrapper">
+        <input type="text" class="input" placeholder="Find a recipe!">
     </div>
-    
-    <!--
-      <main class="web-context">
-        <h1 class="about-title">About</h1>
-        <div class="about-summary">
-          <br />    
-          <p>
-         Eat! uses Third Party API's to aid with the function of the site as
-          well as to provide nutritional information. API's also help with
-          filtering dietary requirements on user searched recipes!.
-        </p>
-      </div>
-    </main>
-      -->
-    <footer>
-      <div class="footer-content">
-        <h3>Eat!</h3>
-        <p>
-          We use Third Party API's to help with the function of this website.
-          Click
-          <a href="./about.html"><span id="remove-footer-dec">here</span></a> to
-          find out more.
-        </p>
-      </div>
-      <script src="./assets/js/script.js"></script>
-    </footer>
-  </body>
+    </header>
+    -->
+    <!--Updated search bar (postion and style)-->
+    <div>
+        <div class="search-wrapper">
+           <input type="search" name="search" id="search" placeholder="Search for recipes">
+            <div class="search-btn">
+                 <button id="search" type="submit">GO</button>
+            </div>
+        </div>
+    </div>
+<footer>
+  <div class="footer-content">
+    <h3>Foodology</h3>
+    <p>We use Third Party API's to help with the function of this website. Click <a href="./about.html"><span id= "remove-footer-dec">here</span></a> to find out more.</p>
+  </div>
+    <script src="./assets/js/script.js"></script>
+</footer>
+
+</body>
 </html>
 
 <!--
     The index-page was last completed on the 06/02/22
 -->
+
