@@ -166,27 +166,29 @@ body {
   padding: 13px 20px;
   border: none;
   border-radius: 13px;
-  font-stretch: expanded;
   font-family: var(--font);
   outline: none;
   background-color: rgba(255, 255, 255, 0.692);
+  position: relative;
+  display: flex;
 }
 
 .search-wrapper input:hover {
   background-color: var(--text-color);
 }
 .search-btn button {
-  height: 50%;
+  height: 65%;
   background-color: var(--primary-color);
-  width: 20%;
-  border-radius: 8px;
+  flex-direction: row;
+  width: 13%;
+  border-radius: 13px;
   padding: 5px;
-  transform: translate(380%, -115%);
+  transform: translate(630%, -100%);
   color: rgb(255, 255, 255);
   border: none;
   cursor: pointer;
   font-size: 15px;
-  position: absolute;
+  position:absolute;
 }
 
 .search-btn button:hover {
