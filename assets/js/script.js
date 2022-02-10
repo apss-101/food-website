@@ -1,25 +1,28 @@
-//navbar hamburger function
-const toggleButton = document.getElementsByClassName('toggle-button')[0]
-const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+THEMEALDB_BASE_URL = "https://www.themealdb.com/api/json/v1/1/search.php?";
 
-toggleButton.addEventListener('click', () => {
-    navbarLinks.classList.toggle('active')
+//navbar hamburger function
+const toggleButton = document.getElementsByClassName("toggle-button")[0];
+const navbarLinks = document.getElementsByClassName("navbar-links")[0];
+const searchForm = document.getElementById("search-form");
+
+toggleButton.addEventListener("click", () => {
+  navbarLinks.classList.toggle("active");
 });
 
 function onSearchSubmit(event) {
-    event.preventDefault();
-    const searchInput = document.getElementById("search-input");
-    const url = THEMEALDB_BASE_URL + "s=" + searchInput.value;
-    console.log(url);
-    fetch("https://www.themealdb.com/api/json/v1/1/random.php")
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (data) {
-        console.log(data);
-      })
-      .catch(function (error) {
-        console.log(error.message);
-      });
-  }
-  searchForm.onsubmit = onSearchSubmit;
+  event.preventDefault();
+  const searchInput = document.getElementById("search-input").value;
+  const url = THEMEALDB_BASE_URL + "s=" + searchInput;
+  console.log(url);
+  fetch(url)
+    .then(function (response) {
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
+    })
+    .catch(function (error) {
+      console.log(error.message);
+    });
+}
+searchForm.onsubmit = onSearchSubmit;
