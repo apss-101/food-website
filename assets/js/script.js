@@ -9,6 +9,13 @@ toggleButton.addEventListener("click", () => {
   navbarLinks.classList.toggle("active");
 });
 
+function renderRecipes(meal) {
+  const recipeCard = document.createElement("div");
+  recipeCard.setAttribute("class", "recipe-card");
+  recipeCard.innerHTML = meal.strMeal;
+  return recipeCard;
+}
+
 function onSearchSubmit(event) {
   event.preventDefault();
   const searchInput = document.getElementById("search-input").value;
@@ -19,7 +26,16 @@ function onSearchSubmit(event) {
       return response.json();
     })
     .then(function (data) {
+      document.getElementById("search-container").remove();
+      const recipeContainer = document.createElement("div");
+      recipeContainer.setAttribute("id", "recipe-container");
+      document.getElementById("body").appendChild(recipeContainer);
       console.log(data);
+      data.meals.map(function (meal) {
+        console.log(meal.strMeal);
+
+        recipeContainer.appendChild(renderRecipes(meal));
+      });
     })
     .catch(function (error) {
       console.log(error.message);
