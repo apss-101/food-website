@@ -95,16 +95,20 @@ body {
 
   background-color: var(--secondary-color);
 }
-
+/*recipe video page starts here*/
 .youtube-container {
   display: flex;
   flex-wrap: wrap;
+  justify-content:center;
 }
 .video-card {
   margin: 1em;
   padding: 0.5em;
-  background-color: white;
+  background-color: rgba(37, 109, 175, 0.9);
+  color: var(--text-color);
   text-align: center;
+  border-radius: 4px;
+  
 }
 @media (max-width: 600px) {
   .toggle-button {
@@ -138,24 +142,7 @@ body {
     display: flex;
   }
 }
-/*navigation coustomisation ends here*/
 
-/*home-page search bar starts here*/
-/*.search-title {
-  position: absolute;
-  justify-content: center;
-  top:50%;
-  left: 50%;
-  transform: translate(-50%,-230%);
-  font-size: x-large;
-  color: var(--text-color);
-  background-color: var(--secondary-color);
-  padding: 7px 7px;
-  border-radius: 10px;
-  text-align: center;
-}
-
-*/
 .search-wrapper {
   position: absolute;
   top: 50%;
@@ -172,7 +159,7 @@ body {
 
 .search-wrapper input {
   font-size: 15px;
-  width: 200%;
+  width: 85%;
   padding: 13px 20px;
   border: none;
   border-radius: 13px;
@@ -180,20 +167,25 @@ body {
   outline: none;
   background-color: rgba(255, 255, 255, 0.692);
   position: relative;
-  display: flex;
+ 
 }
 
 .search-wrapper input:hover {
   background-color: var(--text-color);
 }
+
+.search-btn {
+  border-radius: 3px;
+
+}
+
 .search-btn button {
   height: 65%;
   background-color: var(--primary-color);
-  flex-direction: row;
   width: 13%;
   border-radius: 13px;
   padding: 5px;
-  transform: translate(630%, -100%);
+  transform: translate(-100%, 0%);
   color: rgb(255, 255, 255);
   border: none;
   cursor: pointer;
@@ -204,11 +196,7 @@ body {
 .search-btn button:hover {
   background-color: var(--secondary-color);
 }
-/*home-page search-bar ends here*/
 
-/*footer starts here*/
-.footer {
-}
 .footer-content {
   justify-content: center;
   display: flex;
@@ -236,7 +224,7 @@ footer a {
   color: var(--secondary-color);
   transition: 0.2s;
 }
-/*footer ends here*/
+
 .web-context {
   display: flex;
   flex-direction: column;
@@ -271,39 +259,8 @@ footer a {
   font-size: 13px;
 }
 
-/*Search bar customization*/
-/*
-.wrapper {
-  display: flex;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
-  max-width: 550px;
-  width: 100%;
-  padding: 15px;
-  border-radius: 5px;
-  justify-content: space-between;
-}
-.wrapper .input {
-  width: 85%;
-  padding: 15px 20px;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  
-}
-<<<<<<< HEAD
-
-button {
-  background: #fff;
-  width: 10%;
-  border-radius: 5px;
-  padding: 14px 18px;
-  position:absolute;
-  cursor: pointer;
+#remove-chicken {
+  background-image: none;
+  background-color:antiquewhite;
 
 }
-
-=======
-*/
