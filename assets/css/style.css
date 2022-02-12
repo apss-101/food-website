@@ -96,6 +96,16 @@ body {
   background-color: var(--secondary-color);
 }
 
+.youtube-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.video-card {
+  margin: 1em;
+  padding: 0.5em;
+  background-color: white;
+  text-align: center;
+}
 @media (max-width: 600px) {
   .toggle-button {
     display: flex;
@@ -188,7 +198,7 @@ body {
   border: none;
   cursor: pointer;
   font-size: 15px;
-  position:absolute;
+  position: absolute;
 }
 
 .search-btn button:hover {
@@ -197,7 +207,8 @@ body {
 /*home-page search-bar ends here*/
 
 /*footer starts here*/
-
+.footer {
+}
 .footer-content {
   justify-content: center;
   display: flex;
@@ -213,6 +224,8 @@ body {
   width: 100%;
   text-decoration: none;
   text-align: center;
+  position: fixed;
+  bottom: 0;
 }
 
 footer a {
