@@ -12,8 +12,8 @@ A website which allows users to search for food recipes and food recipe videos.
 https://humayra-hayern.github.io/Foodology/
 
 ## Collaborators
-https://github.com/Humayra-Hayern/Foodology
+https://github.com/Humayra-Hayern
 
-https://github.com/apss-101/food-website
+https://github.com/apss-101
 
 https://github.com/NazAbdul
